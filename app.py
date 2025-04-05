@@ -1,9 +1,9 @@
-from flask import Flask
+import os
 
+from flaskR import create_app  # Now it should work
 
-app = Flask(__name__)
+app = create_app()
 
 @app.route('/home')
-@app.route('/')
-def hello():
-   return "hello, World!"
+def helloo():
+   return "create app using application factory function then importing it into app.py file ."
